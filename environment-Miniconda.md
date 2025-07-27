@@ -93,5 +93,8 @@ dependencies:
    ```
 4. Then make sure VS Code is using `mygeocompy` as its interpreter.
 
+### 🧪 Actual Use 
+* `environment.yml` already exists
+* VS Code is set up to use  `mygeocompy` as its interpreter
 ---
 

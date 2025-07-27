@@ -1,0 +1,42 @@
+---
+title: "用Quarto寫電子書/筆記"
+author: "Liao, Han-Teng"
+date: 2025-07-27
+format: html
+lang: en
+output: 
+  html: 
+    standalone: false
+    mathjax: true
+    toc: true
+---
+
+## VSCode in Windows 11
+
+You can also use the shortcut Ctrl+Shift+K to trigger preview directly.
+
+
+## Markdown 支援測試塊
+
+Markdown is an easy to read and write text format:
+
+- It's _plain text_ so works well with version control
+- It can be **rendered** into HTML, PDF, and more
+- Learn more at: <https://quarto.org/docs/authoring/>
+
+## Python Code Cell 代碼測試塊
+
+Here is a Python code cell:
+
+```{python}
+import os
+os.cpu_count()
+```
+
+## LaTex 公式測試塊
+
+Use LaTeX to write equations:
+
+$$
+\chi' = \sum_{i=1}^n k_i s_i^2
+$$
