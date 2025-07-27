@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "C:\\ProgramData\\miniconda3\\envs\\mygeocompy\\python.exe",
+  "terminal.integrated.env.windows": {
+    "CONDA_PREFIX": "C:\\ProgramData\\miniconda3\\envs\\mygeocompy",
+    "PATH": "C:\\ProgramData\\miniconda3\\envs\\mygeocompy\\Scripts;C:\\ProgramData\\miniconda3\\envs\\mygeocompy;${env:PATH}"
+  }
+}
