@@ -1,27 +1,27 @@
 
-# Preface {.unnumbered}
+# 前言 {.unnumbered}
 
-**Geocomputation with Python** (*geocompy*) is motivated by the need for an introductory resource for working with geographic data with the most popular programming language in the world.
-A unique selling point of the book is its cohesive and joined-up coverage of *both vector and raster* geographic data models and consistent learning curve.
-We aim to *minimize surprises*, with each section and chapter building on the previous.
-If you're just starting out with Python for working with geographic data, this book is an excellent place to start.
+Geocomputation with Python（簡稱 geocompy）的動機在於提供一本入門教材，協助使用全球最受歡迎的程式語言 Python 處理地理資料。
+本書的獨特賣點在於其整合性高的內容編排，涵蓋了*向量與柵格*兩種地理資料模型，並具備穩定一致的學習曲線。
+我們致力於*減少學習上的意外與困惑*，各章節間環環相扣、層層遞進。
+若您正開始使用 Python 處理地理資料，本書將是絕佳的起點。
 
-There are many resources on Python on 'GeoPython' but none that fill this need for an introductory resource that provides strong foundations for future work.
-We want to avoid reinventing the wheel and provide something that fills an 'ecological niche' in the wider free and open-source software for geospatial (FOSS4G) ecosystem.
-Key features include:
+雖然目前已有許多與「'GeoPython'」相關的資源，但尚缺一本真正從入門角度切入，為未來進階學習奠定紮實基礎的教材。
+我們不打算重複造輪，而是希望填補自由開源地理資訊軟體（FOSS4G）生態系中的「'生態位'」，提供具有差異性的資源。
+📌 本書的核心特色包括：
 
-1.  Doing basic operations well
-1.  Integration of vector and raster datasets operations
-1.  Clear explanation of each line of code in the book to minimize surprises
+1. 紮實掌握基本操作技巧
+2. 整合向量與柵格資料集的處理作業
+3. 明確解說書中每一行程式碼，以減少學習障礙
 <!-- 4.  Exercises at the end of each chapter with reproducible and open solutions -->
-1.  Provision of lucid example datasets and meaningful operations to illustrate the applied nature of geographic research
+4. 提供清晰的範例資料集與具意義的操作，展現地理研究的應用性
 
-This book complements and adds value to other projects in the ecosystem, as highlighted in the following comparison between *Geocomputation with Python* and related GeoPython books:
+📚 本書亦與相關 GeoPython 書籍形成互補並提升整體價值，以下為幾本參考書目的簡略比較：
 
--   *Learning Geospatial Analysis with Python*[^book_1] and *Geoprocessing with Python*[^book_2] are books in this space that focus on processing spatial data using low-level Python interfaces for GDAL, such as the **gdal**, **gdalnumeric**, and **ogr** packages from **osgeo**. This approach requires writing more lines of code. We believe our approach is more 'Pythonic' and future-proof, in light of development of packages such as **geopandas** and **rasterio**.
--   *Introduction to Python for Geographic Data Analysis*[^book_3] (in progress) seeks to provide a general introduction to 'GIS in Python', with parts focusing on Python essentials, using Python with GIS, and case studies. Compared with this book, which is also open source, and is hosted at pythongis.org, *Geocomputation with Python* has a narrower scope (not covering spatial network analysis, for example) and more coverage of raster data processing and raster-vector interoperability.
--   *Geographic Data Science with Python*[^book_4] is an ambitious project with chapters dedicated to advanced topics, with Chapter 4 on Spatial Weights getting into complex topics relatively early, for example.
--   *Python for Geospatial Data Analysis*[^book_5] introduces a wide range of approaches to working with geospatial data using Python, including automation of proprietary and open-source GIS software, as well as standalone open-source Python packages (which is what we focus on and explain comprehensively in our book). Geocompy is shorter, simpler and more introductory, and covers raster and vector data with equal importance.
+-   *Learning Geospatial Analysis with Python*[^book_1] 和 *Geoprocessing with Python*[^book_2] 是本領域的書籍，專注於使用 Python 的低階介面處理空間資料，特別是透過 **osgeo** 套件中的 **gdal**、**gdalnumeric** 和 **ogr** 等模組。這種作法通常需要撰寫較多的程式碼。考量到 **geopandas** 和 **rasterio** 等新興套件的發展，我們認為本書所採用的方法更符合 Python 語言風格（'Pythonic'）且具備前瞻性。
+-   *Introduction to Python for Geographic Data Analysis*[^book_3]（尚在撰寫中）旨在提供「Python 地理資訊系統（GIS）」的基礎入門，其中涵蓋 Python 基礎語法、Python 在 GIS 中的應用，以及實務案例分析。相較於本書——同樣為開放原始碼教材，並托管於 pythongis.org——*Geocomputation with Python* 的範疇較為聚焦（例如未涵蓋空間網路分析），但更強調柵格資料的處理與柵格向量資料的互操作性。
+-   *Geographic Data Science with Python*[^book_4] 為雄心勃勃的專案，其章節專注於進階主題，例如第 4 章即深入探討空間權重（Spatial Weights），內容複雜且進入時程較早。
+-   *Python for Geospatial Data Analysis*[^book_5] 涵蓋使用 Python 處理地理空間資料的多種方式，包括專有與開源 GIS 軟體的自動化操作，以及獨立的開源 Python 套件（亦是本書重點剖析的領域）。相較之下，Geocompy 更簡潔、容易上手且具入門性，並以同等重視的角度探討柵格與向量資料。
 
 [^book_1]: [https://www.packtpub.com/product/learning-geospatial-analysis-with-python/9781783281138](https://www.packtpub.com/product/learning-geospatial-analysis-with-python/9781783281138)
 
@@ -33,29 +33,29 @@ This book complements and adds value to other projects in the ecosystem, as high
 
 [^book_5]: [https://www.oreilly.com/library/view/python-for-geospatial/9781098104788/](https://www.oreilly.com/library/view/python-for-geospatial/9781098104788/)
 
-Another unique feature of the book is that it is part of a wider community.
-*Geocomputation with Python* is a sister project of *Geocomputation with R*[^geocompr][@lovelace_geocomputation_2019], a book on geographic data analysis, visualization, and modeling using the R programming language that has 60+ contributors and an active community, not least in the associated Discord group[^geocompr_discord].
-Links with the vibrant 'R-spatial' community, and other communities such as GeoRust and JuliaGeo, lead to many opportunities for mutual benefit across open-source ecosystems.
+另一項本書的獨特特色是其屬於更廣泛的社群體系。
+*Geocomputation with Python* 是 *Geocomputation with R*[^geocompr][@lovelace_geocomputation_2019] 的姊妹計畫，後者是一本以 R 語言進行地理資料分析、視覺化與建模的著作，擁有超過 60 位貢獻者及活躍社群，尤其是在其相關的 Discord 群組中[^geocompr_discord]。
+與充滿活力的 'R-spatial' 社群，以及如 GeoRust 和 JuliaGeo 等其他開源社群的連結，創造出跨生態系統的交流與互利合作機會。
 
 [^geocompr]: [https://r.geocompx.org/](https://r.geocompx.org/)
 
 [^geocompr_discord]: [https://discord.gg/PMztXYgNxp](https://discord.gg/PMztXYgNxp)
 
-## Prerequisites
+## 建議背景知識（Prerequisites）
 
-We assume that the reader is: 
+我們假設讀者已具備以下基礎：
 
-* familiar with the Python language, 
-* is capable of running Python code and install Python packages, and 
-* is familiar with the `numpy` and `pandas` packages for working with data in Python. 
+- 熟悉 Python 語言
+- 能夠執行 Python 程式碼並安裝相關套件
+- 熟悉 `numpy` 與 `pandas` 套件，可用於處理 Python 中的資料
 
-From that starting point on, the book introduces the topic of working with *spatial data* in Python, through dedicated third-party packages---most importantly `geopandas` and `rasterio`. 
+在這樣的起點下，本書將逐步引導讀者使用 Python 處理_空間資料_，藉由專門的第三方套件進行操作——其中最重要的是 `geopandas` 與 `rasterio`。
 
-We also assume familiarity with theoretical concepts of geographic data and GIS, such as coordinate systems, projections, spatial layer file formats, etc., which is necessary for understanding the reasoning of the examples.
+我們同時假設讀者已瞭解地理資料與地理資訊系統（GIS）的理論概念，例如座標系統、投影法、空間圖層檔案格式等，這些知識有助於理解書中的範例邏輯與推理。
 
-## Code and sample data
+## 程式碼與範例資料
 
-To run the code examples, you can download[^book_data_zip] the ZIP file of the GitHub repository. In the ZIP file, the `ipynb` directory contains the source files of the chapters in Jupyter Notebook format, the `data` directory contains the sample data files, and the `output` directory contains the files created in code examples (some of which are also used as inputs in other code sections). Place them together as follows to run the code:
+若要執行書中的程式碼範例，可下載 GitHub 儲存庫的 ZIP 檔案[^book_data_zip]。在該 ZIP 檔中，`ipynb` 資料夾包含各章節的 Jupyter Notebook 原始檔，`data` 資料夾內含範例資料，`output` 資料夾則存有由程式碼產生的輸出檔案（部分也用作其他範例段落的輸入）。執行程式碼時，請將這些資料夾按下列結構置於同一目錄中：
 
 [^book_data_zip]: [https://github.com/geocompx/geocompy/zipball/master](https://github.com/geocompx/geocompy/zipball/master)
 
@@ -125,9 +125,9 @@ To run the code examples, you can download[^book_data_zip] the ZIP file of the G
 └── 08-mapping.ipynb
 ```
 
-## Software
+## 軟體環境（Software）
 
-Python version used when rendering the book:
+本課程所使用的 Python 版本如下：  
 
 ```{python}
 #| echo: false
@@ -135,7 +135,7 @@ import sys
 print(sys.version)
 ```
 
-Versions of the main packages used in the book:
+教材內容執行時所依賴的主要套件版本如下所列：
 
 ```{python}
 #| echo: false
@@ -176,12 +176,12 @@ print(result)
 # print(filtered_result)
 ```
 
-## Acknowledgements
+## 致謝（Acknowledgements）
 
-We acknowledge Robin Lovelace, Jakub Nowosad, and Jannes Muenchow---authors of *Geocomputation with R* (Robin and Jakub also author the present book), a book on the same topic for a different programming language (R). The structure, topics, and most of the theoretical discussions were adapted from that earlier publication. 
+本教材特別感謝 _Geocomputation with R_ 一書的三位作者 Robin Lovelace、Jakub Nowosad、Jannes Muenchow——其中 Robin 與 Jakub 亦為本書（Python 版本）的共同作者。其原著在地理資料分析、視覺化與建模方面奠定了理論與架構上的基礎，許多章節之內容、主題選擇與理論討論皆源自該書。
 
-We thank the authors of the Python language, and the authors of the **numpy**, **pandas**, **shapely**, **geopandas**, and **rasterio** packages which are used extensively in the book, for building these wonderful tools. 
+我們誠摯感謝 Python 語言的開發者，以及 **numpy**、**pandas**、**shapely**、**geopandas**、**rasterio** 等套件的貢獻者——這些套件在本課程與教材中廣泛使用，為地理計算提供了堅實且高效的工具組。
 
-We acknowledge GitHub users Will Deakin, Sean Gillies, Josh Cole, and Jt Miclat (at the time of writing; full list on GitHub[^github_contributors]) for their contributions during the open-source development of the book.
+亦感謝 GitHub 使用者 Will Deakin、Sean Gillies、Josh Cole 及 Jt Miclat（依撰寫時期）於本教材開源開發過程中所提供之貢獻。完整名單請參見 GitHub 頁面[^github_contributors]。
 
 [^github_contributors]: [https://github.com/geocompx/geocompy/graphs/contributors](https://github.com/geocompx/geocompy/graphs/contributors)
