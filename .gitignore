@@ -16,3 +16,4 @@ cache/
 
 # ignore the environment folder (geocompyr)
 geocompy
+/.obsidian
